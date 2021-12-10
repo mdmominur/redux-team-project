@@ -6,14 +6,16 @@
     border-radius: 5px;
   }
   ::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.603); 
+    background: rgba(241, 97, 72, 0.705); 
     border-radius: 20px;
   }
 
 .cart-container{
-    border-left: .5px solid gray;
+    /* border-left: .5px solid gray; */
     height: 50vh;
     overflow-y: scroll;
+    margin-top: 55px;
+    min-width: 100px;
     
 }
 
@@ -21,6 +23,7 @@
 .cart{
     /* border: 1px solid red; */
     align-items: center;
+
 }
 
 .cart img{
