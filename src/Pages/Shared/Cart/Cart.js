@@ -4,6 +4,7 @@ import './Cart.css'
 const Cart = () => {
     return (
         <div className='cart-container sticky-top'>
+            <h4>Cart</h4>
             <div className='d-flex cart'>
                 <img src="https://i.ibb.co/vkx7hPx/ideapad-gaming-3i-01-500x500.jpg" alt="laptop pic" className='img-fluid' />
                 <div className="cart-details">
