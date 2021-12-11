@@ -9,7 +9,7 @@ const Product = ({product}) => {
     
     return (
         <div className="col-md-4 my-4">
-            <div className='p-4 shadow'>
+            <div className='p-4 shadow p-container'>
                 <div>
                     <img className='img-fluid' src={thumbnail} alt="" />
                 </div>
@@ -19,7 +19,10 @@ const Product = ({product}) => {
                     <strong>{price}</strong>
                     <p>{key_features.slice(0, 200)}...</p>
 
-                    <button onClick={() => dispatch(addToCart(product))} className='btn btn-regular position-relative mx-2 px-5  fw-bold'>Add To Cart</button>
+                    <div className='text-center'>
+                    <button onClick={() => dispatch(addToCart(product))} className='btn btn-regular position-relative mx-2 fw-bold'>Add To Cart</button>
+
+                    </div>
                 </div>
             </div>
         </div>
