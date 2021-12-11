@@ -10,12 +10,13 @@ import cartProvider from './Features/cart';
 const store = configureStore({
   reducer: {
      cart: cartProvider,
+     
   },
 });
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-    <App />
+      <App />
 
     </Provider>
   </React.StrictMode>,
