@@ -4,7 +4,7 @@ import logo from './logo.png';
 const Nav = () => {
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-5 py-2">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-5 py-2 sticky-top">
                 <div className="container-fluid">
                     <img src={logo} alt="" height="30px" width="30px" />
                     <a className="navbar-brand ms-2" href="/home">Compify</a>
