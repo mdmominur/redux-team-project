@@ -1,7 +1,11 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../../../Features/cart';
 import './Product.css';
 const Product = ({product}) => {
     const {name, price, thumbnail, key_features} = product;
+    const dispatch = useDispatch();
+
     
     return (
         <div className="col-md-4 my-4">
@@ -15,7 +19,7 @@ const Product = ({product}) => {
                     <strong>{price}</strong>
                     <p>{key_features.slice(0, 200)}...</p>
 
-                    <button className='btn btn-regular position-relative mx-2 px-5  fw-bold'>Add To Cart</button>
+                    <button onClick={() => dispatch(addToCart(product))} className='btn btn-regular position-relative mx-2 px-5  fw-bold'>Add To Cart</button>
                 </div>
             </div>
         </div>
